@@ -31,7 +31,6 @@ public class Main {
         } catch (InterruptedException e) {
             System.err.println("Error en la espera de hilos: " + e.getMessage());
         }
-
         System.out.println();
         System.out.println("Todos los pedidos han sido entregados correctamente.");
     }
