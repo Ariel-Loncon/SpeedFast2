@@ -17,6 +17,10 @@ public class ZonaDeCarga {
     }
 
     public synchronized Pedido retirarPedido() {
-        return colaPedidos.poll(); // Retorna el siguiente pedido o null si está vacía
+        Pedido pedido = colaPedidos.poll();
+        if (pedido != null) {
+            pedido.setEstado(EstadoPedido.EN_REPARTO);
+        }
+        return pedido;
     }
 }

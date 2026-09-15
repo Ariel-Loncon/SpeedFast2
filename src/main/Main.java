@@ -1,5 +1,4 @@
 package main;
-
 import model.*;
 
 public class Main {
